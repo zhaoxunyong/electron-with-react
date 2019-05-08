@@ -3,11 +3,8 @@ import axios from 'axios'
 import { message, notification } from 'antd'
 import { DEV_BACKEND_SERVER_URL, WITH_CREDENTIALS } from 'config/development'
 
-let root = ''
-if (process.env.NODE_ENV === 'development') {
-    root = DEV_BACKEND_SERVER_URL
-    console.log('current mode is development, remote backend server url is ' + root)
-}
+let root = DEV_BACKEND_SERVER_URL
+console.log('current remote backend server url is ' + root)
 
 axios.interceptors.request.use(
     config => {
@@ -83,12 +80,7 @@ function apiAxios(method, url, params) {
         ajaxObj['withCredentials'] = false
     } else {
         ajaxObj['baseURL'] = root
-        // dev enviroment
-        if (process.env.NODE_ENV === 'development') {
-            ajaxObj['withCredentials'] = WITH_CREDENTIALS
-        } else {
-            ajaxObj['withCredentials'] = true
-        }
+        ajaxObj['withCredentials'] = WITH_CREDENTIALS
     }
     /** 
     error response example:

@@ -1,8 +1,8 @@
 {
-    "name": "test-app",
-    "version": "0.1.0",
+    "name": "electron-with-react",
+    "version": "1.0.0-SNAPSHOT",
     "description": "A Eleactron app with react.",
-    "author": "Godfery.Yang<hiyangguo@qq.com>",
+    "author": "zhaoxunyong@qq.com",
     "main": "./public/electron.js",
     "private": true,
     "homepage": ".",
