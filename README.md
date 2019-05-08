@@ -187,3 +187,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 -   https://blog.rsuitejs.com/2018/03/28/build-a-app-width-electron-and-react/
 -   https://github.com/hiyangguo/electron-with-react
+-   https://juejin.im/post/5c46ab47e51d45522b4f55b1
