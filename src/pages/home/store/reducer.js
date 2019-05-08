@@ -37,7 +37,7 @@ const transferRouter = (menuData, routes = []) => {
 }
 
 export default (state = defaultState, action) => {
-    let newState = JSON.parse(JSON.stringify(state))
+    let newState = { ...state }
     switch (action.type) {
         case actionTypes.INIT_MENU_DATA:
             newState.menuData = action.payload

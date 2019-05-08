@@ -38,8 +38,7 @@ class Home extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
         // 性能优化：保证路由只加载一次。
-        // 另外如果不加这个判断时，在最后的this.props.routes中component参数会丢失，不清楚怎么回事...
-        if (this.props.routes.length === 0 && nextProps.routes.length > 0) {
+        if ((this.props.routes.length === 0 && nextProps.routes.length > 0) || this.props.collapsed !== nextProps.collapsed || this.state.theme !== nextState.theme) {
             return true
         }
         return false
@@ -49,6 +48,14 @@ class Home extends Component {
         this.setState({
             collapsed: !this.state.collapsed
         })
+    }
+
+    changeTheme = value => {
+        let theme = value ? 'dark' : 'light'
+        this.setState({
+            theme: theme
+        })
+        localStorage.setItem('defaultTheme', theme)
     }
 
     render() {
