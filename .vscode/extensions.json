@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "anseki.vscode-color",
+        "eg2.vscode-npm-script",
+        "msjsdiag.debugger-for-chrome",
+        "alphabotsec.vscode-eclipse-keybindings",
+        "dsznajder.es7-react-js-snippets",
+        "eamodio.gitlens",
+        "zerofinance-git.zerofinance-git",
+        "xyz.local-history",
+        "DotJoshJohnson.xml",
+        "esbenp.prettier-vscode",
+        "OBKoro1.korofileheader",
+        "JerryHong.autofilename",
+        "wix.vscode-import-cost"
+    ]
+}
