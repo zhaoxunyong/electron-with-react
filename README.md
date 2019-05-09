@@ -48,7 +48,7 @@ code --install-extension octref.vetur
 code --install-extension sdras.vue-vscode-snippets
 #git
 code --install-extension eamodio.gitlens
-code --install-extension zerofinance-git.zerofinance-git
+code --install-extension zerofinance.zerofinance-git
 #others
 code --install-extension xyz.local-history
 code --install-extension DotJoshJohnson.xml
