@@ -12,14 +12,32 @@ function createWindow() {
     IS_DEV && installExtensions()
 
     // 创建浏览器窗口。
-    win = new BrowserWindow({
+    /* win = new BrowserWindow({
         width: 800,
         height: 600,
         //禁用跨域检查
         webPreferences: {
             webSecurity: false
         }
+    }) */
+
+    win = new BrowserWindow({
+        show: false,
+        //禁用跨域检查
+        webPreferences: {
+            webSecurity: false
+        }
     })
+    win.maximize()
+    win.show()
+
+    /* win = new BrowserWindow({
+        fullscreen: true,
+        //禁用跨域检查
+        webPreferences: {
+            webSecurity: false
+        }
+    }) */
 
     // 加载应用
     const staticIndexPath = path.join(__dirname, './index.html')
